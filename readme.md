@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/3481514/198889796-13886fe4-bc9b-4b08-80eb-ab54bd58d383.png)
+
+
 ## 🔦 About
 
 This monorepo is a starter for an Expo + Next.js app using [Expo Router](https://expo.github.io/router/) with a design system package using react-native-web storybook.
