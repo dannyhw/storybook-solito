@@ -1,3 +1,4 @@
+import { Button } from 'design-system'
 import { Text, useSx, View, H1, P, Row, A } from 'dripsy'
 import { TextLink } from 'solito/link'
 import { MotiLink } from 'solito/moti'
@@ -10,6 +11,10 @@ export function HomeScreen() {
       sx={{ flex: 1, justifyContent: 'center', alignItems: 'center', p: 16 }}
     >
       <H1 sx={{ fontWeight: '800' }}>Welcome to Solito.</H1>
+      <Button
+        text="Design System Button"
+        onPress={() => console.log('from design system inside the app package')}
+      />
       <View sx={{ maxWidth: 600 }}>
         <P sx={{ textAlign: 'center' }}>
           Here is a basic starter to show you how you can navigate from one
