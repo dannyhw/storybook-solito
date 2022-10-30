@@ -14,7 +14,8 @@
   },
   "scripts": {
     "native": "cd apps/expo && expo start",
-    "web": "cd apps/next && yarn next"
+    "web": "cd apps/next && yarn next",
+    "storybook": "cd packages/design-system && yarn storybook"
   },
   "resolutions": {
     "metro": "0.72.3"
