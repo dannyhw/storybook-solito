@@ -1,18 +1,6 @@
-# Solito with Expo Router Example Monorepo 🕴
-
-```sh
-npx create-solito-app@latest -t with-expo-router
-```
-
-And just like that, you now have an Expo + Next.js app using Expo Router.
-
-## ⚡️ Instantly clone & deploy
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnandorojo%2Fsolito%2Ftree%2Fmaster%2Fexample-monorepos%2Fwith-expo-router&project-name=solito-app&repo-name=solito-app&demo-title=Solito%20App%20⚡%EF%B8%8F&demo-description=React%20Native%20%2B%20Next.js%20starter%20with%20Solito.%20Made%20by%20Fernando%20Rojo.&demo-url=https%3A%2F%2Fsolito.dev%2Fstarter&demo-image=https%3A%2F%2Fsolito.dev%2Fimg%2Fog.png)
-
 ## 🔦 About
 
-This monorepo is a starter for an Expo + Next.js app using [Expo Router](https://expo.github.io/router/) to enable a file-system based routing in native apps. The API is very Next.js- and Remix-esque. I view it as the future of cross-platform routing.
+This monorepo is a starter for an Expo + Next.js app using [Expo Router](https://expo.github.io/router/) with a design system package using react-native-web storybook.
 
 Do note that Expo Router was announced recently (28 Sep 2022) as an **early beta** - full announcement by Evan Bacon from Expo [here](https://blog.expo.dev/rfc-file-system-based-routing-in-react-native-7a35474722a).
 
@@ -21,6 +9,7 @@ Do note that Expo Router was announced recently (28 Sep 2022) as an **early beta
 - `solito` for cross-platform navigation
 - `moti` for animations
 - `dripsy` for theming/design (you can bring your own, too)
+- `@storybook/addon-react-native-web`
 - Expo SDK 46
 - Next.js 12
 - React Navigation 6
@@ -34,11 +23,11 @@ Do note that Expo Router was announced recently (28 Sep 2022) as an **early beta
   - `next`
 
 - `packages` shared packages across apps
+  - `design-system` a design system using storybook to showcase components
   - `app` you'll be importing most files from `app/`
     - `features` (don't use a `screens` folder. organize by feature.)
     - `provider` (all the providers that wrap the app, and some no-ops for Web.)
 
-You can add other folders inside of `packages/` if you know what you're doing and have a good reason to.
 
 ## 🏁 Start the app
 
@@ -48,6 +37,8 @@ You can add other folders inside of `packages/` if you know what you're doing an
   - Runs `yarn next`
 - Expo local dev: `yarn native`
   - Runs `expo start`
+- storybook local dev: `yarn storybook`
+  - Runs `yarn storybook` in design-system
 
 ## 🆕 Add new dependencies
 
@@ -80,9 +71,6 @@ You can also install the native library inside of `packages/app` if you want to 
 
 Follow Fernando Rojo on Twitter: [@FernandoTheRojo](https://twitter.com/fernandotherojo)
 
-## 🧐 Why use Expo + Next.js?
+Storybook added by daniel williams [@Danny_H_W](https://twitter.com/Danny_H_W)
 
-See my talk about this topic at Next.js Conf 2021:
-
-<a href="https://www.youtube.com/watch?v=0lnbdRweJtA"><img width="1332" alt="image" src="https://user-images.githubusercontent.com/13172299/157299915-b633e083-f271-48c6-a262-7b7eef765be5.png">
-</a>
+About react native web storybook: https://www.dannyhwilliams.co.uk/introducing-react-native-web-storybook
