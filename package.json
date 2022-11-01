@@ -13,9 +13,9 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "native": "cd apps/expo && expo start",
-    "web": "cd apps/next && yarn next",
-    "storybook": "cd packages/design-system && yarn storybook"
+    "native": "yarn workspace expo-app start",
+    "web": "yarn workspace next-app next",
+    "storybook": "yarn workspace design-system storybook"
   },
   "resolutions": {
     "metro": "0.72.3"
